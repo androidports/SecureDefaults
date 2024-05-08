@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/vpeschenkov'
   s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.15'
-  s.source_files = 'Sources/SecureDefaults/**/*'
+  s.source_files = 'Sources/SecureDefaults/**/*.swift'
+  s.resource_bundle = { "SecureDefaults" => "Sources/SecureDefaults/PrivacyInfo.xcprivacy" }
 end
